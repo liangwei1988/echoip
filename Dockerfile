@@ -8,7 +8,7 @@ RUN make
 
 # Run
 FROM scratch
-EXPOSE 8080
+EXPOSE 80
 COPY --from=build \
      /go/bin/echoip \
      /go/src/github.com/mpolden/echoip/index.html \
